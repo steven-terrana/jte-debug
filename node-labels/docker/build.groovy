@@ -3,5 +3,8 @@ void call(){
     node{
       sh "docker -v" 
     }
+    node("directly-passed"){
+      sh "docker -v"
+    }
   }
 }
